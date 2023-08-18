@@ -1,1 +1,7 @@
-<!DOCTYPE html><html lang="pt-br"><head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles/main.min.css"><meta charset="UTF-8"><title>Sorteador</title></head><body><main><h1>Sorteador</h1><form id="formulario"><div><label for="num_max">Numero maximo</label> <input type="number" id="num_max"></div><button type="submit">Sortear</button></form></main></body><script src="https://code.jquery.com/jquery-3.7.0.min.js"></script><script src="./scripts/script.js"></script></html>
+<!DOCTYPE html><html lang="pt-br"><head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles/main.min.css"><meta charset="UTF-8"><title>Sorteador</title></head><body><main><h1>Sorteador</h1><form id="formulario"><div><label for="num_max">Numero maximo</label> <input type="number" id="num_max"></div><button type="submit">Sortear</button></form></main></body><script src="https://code.jquery.com/jquery-3.7.0.min.js"></script><script></script><script>$(document).ready(function () {
+        $('#formulario').submit(function (e) {
+            e.preventDefault()
+            const nom = parseFloat($('#num_max').val())
+            alert(`numero escolhido: ${parseInt(nom*Math.random())}`)
+        })
+    });</script></html>

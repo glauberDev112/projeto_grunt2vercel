@@ -43,3 +43,23 @@ input {
     border-bottom: 3px solid @cor_fonte;
     max-width: 100px;
 }
+.returnSet {
+    text-transform: capitalize;
+    border: 5px dotted @cor_fonte;
+    border-radius: 40px;
+    margin: 10px;
+    box-sizing: content-box;
+    .return {
+        font-size: 2em;
+    }
+}
+
+.returnSet {
+    transition: opacity 0.3s;
+    &[escondido='true'] {
+        opacity: 0%;
+    }
+    &[escondido='false'] {
+        opacity: 100%;
+    } 
+}
