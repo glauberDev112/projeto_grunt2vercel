@@ -25,11 +25,8 @@ module.exports = function (grunt) {
             build: {
                 files: ['src/**/**/*.html','src/styles/*.less'],
                 tasks: ['less:development','htmlmin:dist','replace:dev','clean','uglify']
-            }
-            dist: {
-                files: ['dist/**/**/*.html','dist/styles/*.less'],
-                tasks: ['less:production','htmlmin:dist','replace:dist','clean','uglify']
-            }
+            },
+
         },
         replace: {
             dev: {
@@ -104,7 +101,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean')
     grunt.loadNpmTasks('grunt-contrib-uglify')
 
-    grunt.registerTask('default', ['watch:dist'])
+    grunt.registerTask('default', ['less:production','htmlmin:dist','replace:dist','clean','uglify'])
     grunt.registerTask('test',['htmlmin'])
     grunt.registerTask('build', ['watch:build'])
 }
