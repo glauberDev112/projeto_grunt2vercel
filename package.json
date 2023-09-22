@@ -28,15 +28,24 @@
         "grunt-contrib-uglify": "^5.2.2",
         "grunt-contrib-watch": "^1.1.0",
         "grunt-replace": "^2.0.2",
+        "gulp": "^4.0.2",
+        "gulp-ignore-errors": "^0.0.4",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-less": "^5.0.0",
+        "gulp-obfuscate": "^0.2.9",
+        "gulp-replace": "^1.1.4",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify": "^3.0.2",
         "sass": "^1.63.6"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "sass": "sass",
         "grunt": "grunt",
+        "gulp": "gulp",
         "pash": "grunt",
         "sass_loop": "sass source/main.scss build/main.css --watch",
-        "build": "grunt build"
+        "build": "gulp"
     },
     "author": "",
     "license": "ISC"
