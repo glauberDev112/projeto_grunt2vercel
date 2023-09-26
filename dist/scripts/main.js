@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#formulario").submit(function(t){t.preventDefault(),$("#num").text(parseInt(parseFloat($("#num_max").val())*Math.random())),$(".returnSet").attr("escondido","false")})});
