@@ -13,7 +13,7 @@ function html(callback) {
 }
 
 function img(callback) {
-    return gulp.src('src/images')
+    return gulp.src('src/images/*.*')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images/'))
         .on('end', callback);
